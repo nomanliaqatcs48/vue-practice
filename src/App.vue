@@ -1,21 +1,22 @@
 <template>
-  <div class="app">
-    <h1>Routing Example</h1>
-
+  <!-- <div class="app">
+    <h1>Routing Example</h1> -->
+    <Navbar />
     <!-- Navigation Tabs -->
-    <nav>
+    <!-- <nav>
       <RouterLink to="/todo">Todo</RouterLink>
       <RouterLink to="/counter">Counter</RouterLink>
       <RouterLink to="/parenttochild">Parent to Child</RouterLink>
-    </nav>
+    </nav> -->
 
     <!-- Router View -->
     <RouterView />
-  </div>
+  <!-- </div> -->
 </template>
 
 <script setup>
 import { RouterLink, RouterView } from 'vue-router';
+import Navbar from '@/components/Navbar.vue';
 </script>
 
 <style scoped>
